@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Form</title>
+        <title>Rowspan & Colspan</title>
     </head>
     <body>
-        <form>
-            <fieldset>
-                Name: <input type="text" name="name" id="Name">
-                Email: <input type="email" name="email" id="Email">
-
-                Gender:
-                <select>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Others</option>
-                </select>
-                <br><br>
-
-                Course:
-                <input type="radio" name="course" value="B.Tech">B.Tech
-                <input type="radio" name="course" value="M.Tech">M.Tech
-                <br><br>
-
-                comment:
-                <textarea name="comment" rows="4" cols="30"></textarea><br><br>
-
-                <input type="submit" value="submit">
-                <input type="reset" value="reset">
-            </fieldset>
-        </form>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <td colspan="2">Header Cell 1</td>
+                <td>Header<br> cell 2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row<br>span</td>
+                <td>cell 1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="3">Footer cell</td>
+            </tr>
+        </table>
     </body>
 </html>
